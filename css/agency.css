@@ -27,6 +27,7 @@ p.large {
 }
 
 p.photocredit {
+    font-size: 8px;
 }
 
 a,
@@ -344,7 +345,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -418,6 +419,17 @@ section h3.section-subheading {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+
 }
 
 #portfolio * {
@@ -865,6 +877,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-body {
-    webkit-tap-highlight-color: #fed136;
+.modal-open .no-jump {
+overflow-y:scroll;
 }
