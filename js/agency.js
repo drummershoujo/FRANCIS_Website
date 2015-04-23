@@ -24,3 +24,18 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+jQuery('#bluesModal').on('hidden.bs.modal', function (e) {
+  // do something...
+  jQuery('#bluesModal iframe').attr("src", jQuery("#bluesModal iframe").attr("src"));
+});
+
+jQuery('#rockModal').on('hidden.bs.modal', function (e) {
+  // do something...
+  jQuery('#rockModal iframe').attr("src", jQuery("#rockModal iframe").attr("src"));
+});
+
+jQuery('#funkModal').on('hidden.bs.modal', function (e) {
+  // do something...
+  jQuery('#funkModal iframe').attr("src", jQuery("#funkModal iframe").attr("src"));
+});

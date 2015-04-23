@@ -29,6 +29,7 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <![endif]-->
 
 </head>
@@ -36,7 +37,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="no-jump navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -82,6 +83,7 @@
                 <div class="intro-heading">FRANCIS</div>
                 <a href="#music" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
+			<p class="photocredit" align="right">Photo © Robert Thrasher</p>
         </div>
     </header>
 
@@ -95,47 +97,67 @@
                 </div>
             </div>
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
             <div class="row text-center">
-                <div class="col-md-4">
-					<a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><img src="img/music/blues.jpg" class="img-responsive" alt=""></a>
-                    <a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><h4 class="music-heading">Blues</h4></a>
-                    <p class="text-muted">Francis covers a wide range of Blues from Heavy Blues to Smooth Favorites! ZZ Top, Gary Moore, Other Blues People!</p>
+                <div class="col-md-4" data-toggle="modal" data-target="#bluesModal">
+					<a href="###"><img src="img/music/blues.jpg" class="img-responsive" alt=""></a>
+                    <a href="###"><h4 class="music-heading">Blues</h4></a>
+                    <p class="text-muted">Francis covers a wide range of Blues from Heavy Blues to Smooth Favorites! ZZ Top, Gary Moore, Stevie Ray, and others!</p>
                 </div>
-                <div class="col-md-4">
-                    <a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><img src="img/music/rock.png" class="img-responsive" alt=""></a>
-					<a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><h4 class="music-heading">Rock</h4></a>
-                    <p class="text-muted">Francis covers a wide range of Rock from fusion to Old Favorites! Eric Clapton, The Beatles, Other Rock People!</p>
+                <div class="col-md-4" data-toggle="modal" data-target="#rockModal">
+            		<a href="###"><img src="img/music/rock.png" class="img-responsive" alt=""></a>
+                    <a href="###"><h4 class="music-heading">Rock</h4></a>
+                    <p class="text-muted">Francis covers a wide range of Rock from fusion to Old Favorites! Eric Clapton, The Beatles, and others!</p>
                 </div>
-				<div class="col-md-4">
-                    <a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><img src="img/music/funk.png" class="img-responsive" alt=""></a>
-					<a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" target="_blank"><h4 class="music-heading">Funk</h4></a>
-                    <p class="text-muted">Francis covers a wide range of Funk from fusion to Old Favorites! James Brown, Iseley Brothers, Other Funk People!</p>
+				<div class="col-md-4" data-toggle="modal" data-target="#funkModal">
+                    <a href="###"><img src="img/music/funk.png" class="img-responsive" alt=""></a>
+                    <a href="###"><h4 class="music-heading">Funk and R&B</h4></a>
+                    <p class="text-muted">Francis covers a wide range of Funk from fusion to Old Favorites! James Brown, Isley Brothers, and others!</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+	<div class="modal fade" id="bluesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Blues</h4>
+	      </div>
+	      <div class="modal-body" id="yt-player">
+	        <iframe width="870" height="490" src="http://www.youtube.com/embed/cqPKtzPlbtk?list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" frameborder="0"></iframe>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="rockModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Rock</h4>
+	      </div>
+	      <div class="modal-body" id="yt-player">
+	        <iframe width="870" height="490" src="http://www.youtube.com/embed/cqPKtzPlbtk?list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" frameborder="0"></iframe>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="funkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Funk/R&B</h4>
+	      </div>
+	      <div class="modal-body" id="yt-player">
+	        <iframe width="870" height="490" src="http://www.youtube.com/embed/cqPKtzPlbtk?list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh" frameborder="0"></iframe>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
 
     <!-- Show Schedule Section -->
     <section id="schedule">
@@ -158,7 +180,7 @@
                                     <h3>3/28/2015</h3>
                                     <h3 class="subheading">Live Music Night</h3>
 									<h4 class="subheading">Central Saloon</h4>
-									<h4 class="subheading"><a href="http://centralsaloon.com/calendar/">Set starts at ?PM</a></h4>
+									<h4 class="subheading"><a href="http://centralsaloon.com/calendar/">Set starts at 9PM</a></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Francis returns to the Central Saloon!</p>
@@ -176,7 +198,6 @@
                                     <h3>3/1/2015</h3>
                                     <h3 class="subheading">Farewell Leftovers Party!</h3>
 									<h4 class="subheading">Judkins Street Cafe</h4>
-									<h4 class="subheading">Set starts at ?PM</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Judkins Street Cafe is closing!</p>
@@ -193,7 +214,6 @@
                                     <h3>2/17/2015</h3>
                                     <h3 class="subheading">Mardi Gras!</h3>
 									<h4 class="subheading">Central Saloon</h4>
-									<h4 class="subheading">Set starts at ?PM</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">It's Mardi Gras at the Central Saloon!</p>
@@ -211,7 +231,6 @@
                                     <h3>12/27/2013</h3>
 									<h3 class="subheading">RMI Holiday Party</h3>
                                     <h4 class="subheading">Boxley's</h4>
-									<h4 class="subheading">Set starts at ?PM</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Ring those bells!</p>
@@ -220,7 +239,6 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <a href="C:\Users\drumm_000\Documents\GitHub\FRANCIS_Website\index.html#contact">
 								<div class="timeline-image">
 									<h4>Book
 									<br>FRANCIS
@@ -246,28 +264,24 @@
             <div class="row">
 				<div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>John Drenning</h4>
                         <p class="text-muted">Guitar</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Jeremy Fried</h4>
                         <p class="text-muted">Guitar & Vocals</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Kyle Farlow</h4>
                         <p class="text-muted">Bass & Vocals</p>
                     </div>
                 </div>
 				<div class="col-sm-3">
                     <div class="team-member">
-                        <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
                         <h4>Charlene Jeune</h4>
                         <p class="text-muted">Drums & Vocals</p>
                     </div>
@@ -275,7 +289,6 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Francis started as a <a href="http://www.robertsmusicinstitute.com">Robert's Music Institute</a> Player's Club. <br> After a few years of honing their craft, they broke out on their own to bring music to the masses.</p>
                 </div>
             </div>
         </div>
@@ -384,22 +397,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <a href="#">
                         <img src="img/logos/the_crocodile.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a href="#">
                         <img src="img/logos/bakes_place.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <a href="#">
                         <img src="img/logos/hard_rock_cafe.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
 				<div class="col-md-3 col-sm-6">
-                    <a href="#">
                         <img src="img/logos/the_central.jpg" class="img-responsive img-centered" alt="">
                     </a>
                 </div>
@@ -455,12 +464,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
                         <li><a href="https://www.facebook.com/Francis.Seattle"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="https://www.youtube.com/watch?v=cqPKtzPlbtk&list=PLms12zNxCT1M23ZUS-xsUgoZq3El54zbh"><i class="fa fa-youtube"></i></a>
